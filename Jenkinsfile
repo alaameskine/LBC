@@ -1,12 +1,6 @@
 pipeline {
   agent any
   stages {
-    stage('Download') {
-      steps {
-        git(url: 'github.com/alaameskine/LBC', branch: 'master', credentialsId: 'alaameskine', changelog: true)
-      }
-    }
-
     stage('Build') {
       steps {
         sh 'php -v'
