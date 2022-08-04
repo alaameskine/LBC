@@ -61,7 +61,7 @@ pipeline {
 
       stage('Mail Notification') {
         steps {
-          emailext(subject: 'LBC Pipeline', body: 'A mail from above', attachLog: true, from: 'jenkins@ubuntu.com', to: 'al2a.meskine@gmail.com')
+          emailext(subject: 'LBC Pipeline', body: 'A mail from above!', attachLog: true, from: 'jenkins@ubuntu.com', to: 'al2a.meskine@gmail.com')
         }
       }
 
